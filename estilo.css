@@ -81,13 +81,18 @@ body,
 
 
 /* EXERCÍCIO 3: cabeçalho da página */
-#cabecalho-pagina {}
+#cabecalho-pagina {
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-right: 10px;
+}
 
 #cabecalho-pagina h1 {
   margin: 0;
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
+  text-align: center;
 }
 
 #cabecalho-pagina h2 {
@@ -95,6 +100,7 @@ body,
   font-size: 24px;
   color: #333;
   font-weight: normal;
+  text-align: end;
 }
 
 /* EXERCÍCIO 4: cada item do menu */
