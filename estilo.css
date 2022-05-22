@@ -125,7 +125,11 @@ article {
 }
 
 /* EXERCÍCIO 6: lateral */
-#lateral {}
+#lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
 /* EXERCÍCIO 7: o ticket */
