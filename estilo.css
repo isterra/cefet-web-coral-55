@@ -2,6 +2,16 @@
 /* importá-las aqui... e definir as `font-family` da turminha... */
 @import "fonts/ravie.css";
 @import "fonts/verdana.css";
+:root {
+  --cor-do-texto: #333;
+  --background-image-recipiente:linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-do-texto: #eee;
+    --background-image-recipiente:linear-gradient(to bottom, #091b37, #13366e 80%);
+  }
+}
 
 h1 {
   font-family: 'Ravie';
@@ -21,7 +31,7 @@ strong {
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+  background-image: var(--background-image-recipiente);
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
   height: 100%;
@@ -36,15 +46,16 @@ strong {
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--cor-do-texto);
   margin-top: 30px;
   padding-left: 20px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--cor-do-texto);
 }
+
 
 
 /* EXERCÍCIO 2: layout da página */
@@ -100,7 +111,7 @@ body,
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: var(--cor-do-texto);
   font-weight: normal;
   text-align: end;
 }
