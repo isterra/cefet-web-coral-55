@@ -24,6 +24,7 @@ strong {
   background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
+  height: 100%;
 }
 
 #cardapio {
@@ -57,7 +58,7 @@ body,
   margin-right: auto;
   display: grid;
   grid-template-columns: 154px auto;
-  grid-template-rows: 100px auto 50px;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "lateral header"
     "lateral menu"
     "lateral footer";
@@ -105,22 +106,23 @@ body,
 }
 
 /* EXERCÍCIO 4: cada item do menu */
-#cardapio{
-  padding-left: 20px;
+#cardapio {
+  padding: 0 20px;
 }
 article {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  padding-left:20px;
-  padding-right:20px;
-}
-article > * {
   line-height: 2em;
+  padding-left: 20px;
 }
 
 
 /* EXERCÍCIO 5: o rodapé */
-#rodape-pagina {}
+#rodape-pagina {
+  display: flex;
+  justify-content: flex-end;
+  margin: 46px 15px 25px 0;
+}
 
 /* EXERCÍCIO 6: lateral */
 #lateral {}
